@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Game Challenge</title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
+</head>
+<body>
+
+  <div id="seeThrough">
+
+  <header>
+    <h1>Penn State vs Ohio State</h1>
+    <h2>Big 10 Football</h2>
+  </header>
+
+
+  <div>
+    <div id="team1">
+      <h2>
+        Penn State
+      </h2>
+      <img src="assets/images/PSU.png" alt="Penn State" id="psuPic">
+      <div class="hits">
+        Field Goal Attempts: <span id="teamone-numshots">0</span><br>
+        Field Goals Scored: <span id="teamone-numhits">0</span>
+      </div>
+      <div>
+        <button id="teamone-shoot">SHOOT</button>
+      </div>
+    </div>
+
+
+    <div id="team2">
+      <h2>
+        Ohio State
+      </h2>
+      <img src="assets/images/OhioState.png" alt="Ohio State" id="osuPic">
+      <div class="hits">
+        Field Goal Attempts: <span id="teamtwo-numshots">0</span><br>
+        Field Goals Scored: <span id="teamtwo-numhits">0</span>
+      </div>
+      <div>
+        <button id="teamtwo-shoot">SHOOT</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="resetDiv">
+    <button id="reset">RESET</button><br>
+    NUMBER OF RESETS: <span id="num-resets">0</span>
+  </div>
+</div>
+
+  <script src="assets/javascrpts/game.js"></script>
+  <audio src="assets/audio/Cheer.mp3" id="psu"></audio>
+  <audio src="assets/audio/Boo.mp3" id="osu"></audio>
+
+  </body>
+</html>
